@@ -1,5 +1,5 @@
-# HelloWorld
-Deploying a "Hello World" Node.js Application on AWS ECS/Fargate with Terraform and GitHub Actions CI/CD Pipeline
+# naval - totd
+Deploying a "naval-totd" Node.js Application on AWS ECS/Fargate with Terraform and GitHub Actions CI/CD Pipeline
 
 Here is my approach on building this project.
 
@@ -7,7 +7,7 @@ Here is my approach on building this project.
 
 Installing [express generator](https://expressjs.com/en/starter/generator.html) ```npm install -g express-generator```
 
-Creating project structure ```express --view=ejs myapp --git```
+Creating project structure ```express --view=ejs naval-totd --git```
 
 Installing dependencies ```npm install```
 
