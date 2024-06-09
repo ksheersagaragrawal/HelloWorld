@@ -13,7 +13,7 @@ Installing dependencies ```npm install```
 
 Installing nodemon```npm install --save nodemon```
 
-Running express application ```DEBUG=myapp:* npm start```
+Running express application ```DEBUG=naval-totd:* npm start```
 
 Get request ```http://localhost:3000/```
 
