@@ -2,10 +2,21 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <% for (const part in sections) { %>
+      <% for (const section in sections[part]) { %>
+        <h2><%= section %></h2>
+        <ul>
+          <% sections[part][section].forEach(chapter => { %>
+            <li><%= chapter.title %> - <a href="/chapter/<%= encodeURIComponent(chapter.title) %>">Get totd</a></li>
+          <% }) %>
+        </ul>
+      <% } %>
+    <% } %>
   </body>
 </html>
