@@ -33,3 +33,17 @@ Adding script ```"test": "jest"```
 Adding github actions continuous integration workflow [node.js](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs)
 
 Modifying the workflow [```runs-on```](https://www.youtube.com/watch?v=R8_veQiYBjI)
+
+### Commit 3:  add business logic – bulk jobs updateChapterQuotes and get naval totd
+
+I will add code coverage github action & optimising current business logic in next commits.
+
+Adding scraping script ```updateChapterUrls.js``` : bulk job to update chapter urls
+
+Adding scraping script ```updateChapterQuotes.js``` : bulk job to update chapter quotes
+
+Adding express router ```chapter.js``` : dynamically generates routes based on ```chapterStructure.json``` & quotes using ```getRandomQuote``` function.
+
+Adding ejs template ```chapter.ejs``` : renders individual chapter with title & quotes.
+
+> Thanks to Claude.ai and GPT-4o ♥️
